@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=cyrillic');
+
+body {
+	font-family: 'Open Sans';
+	background: #eee;
+	margin: 60px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.wrapper {
+	width: 60%;
+}
+
+.main--section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	/*grid-template-rows: 230px;*/
+	/*grid-auto-flow: row;*/
+	grid-gap: 10px;
+}
+
+.main--section a {
+	background-position: center;
+	background-size: cover;
+	height: 35vh;
+    background: #bbb;
+    border: #dbdbdb 1px solid;
+}
+
+nav {
+	margin-bottom: 15px
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+nav li {
+	display: inline
+}
+
+nav a {
+    color: #515151;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 14px;
+    transition: .3s;
+}
+
+nav a:hover {
+	opacity: .9;
+}

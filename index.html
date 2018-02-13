@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="wrapper" id="app">
+		<nav>
+			<ul>
+				<li><a target="_blank" :href="links.gh_repo">GitHub REPO</a></li>
+				<li><a target="_blank" :href="links.gh_profile">GitHub PROFILE</a></li>
+				<li><a target="_blank" :href="links.telegram">Telegram</a></li>
+				<li><a target="_blank" :href="links.vk">VK.COM</a></li>
+			</ul>	
+		</nav>
+
+		<div class="main--section">
+			<a v-for="item in items" v-bind:style="{ 'background-image': `url('${item.urls.small}')` }" :href="item.urls.regular" target="_blank"></a>
+		</div>
+	</div>
+
+	<script src="common.js"></script>
+	<link rel="stylesheet" href="common.css">
+</body>
+</html>
