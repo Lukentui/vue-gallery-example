@@ -3,7 +3,7 @@ var app = new Vue({
 
 	data: {
 		links: {
-			gh_repo: 'https://github.com',
+			gh_repo: 'https://github.com/lukentui/vue-gallery-example',
 			gh_profile: 'https://github.com/lukentui',
 			telegram: 'https://t.me/lukentui',
 			vk: 'https://vk.com/lukentui',
